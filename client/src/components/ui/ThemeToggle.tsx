@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion, AnimatePresence, type HTMLMotionProps } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Moon, Sun } from 'lucide-react';
 import { useTheme } from '../../context/ThemeContext';
 
