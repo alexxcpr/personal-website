@@ -13,14 +13,14 @@
 }
 
 [data-theme="dark"] {
-  /* Dark Mode Overrides - GitHub Dark Inspired Palette */
-  --bg-main: #0D1117;        /* Deep blue-gray background */
-  --bg-surface: #161B22;     /* Elevated surface */
-  --col-primary: #58A6FF;    /* GitHub blue - primary accent */
-  --col-secondary: #F0F6FC;  /* High-contrast text */
-  --col-accent: #1F6FEB;     /* Accent blue for hover states */
-  --col-muted: #8B949E;      /* Muted text for secondary content */
-  --col-shadow: #1F6FEB;     /* Subtle blue shadow for neo-brutalist effects */
+  /* Dark Mode - True Matrix Theme */
+  --bg-main: #020402;        /* Almost black with subtle green tint */
+  --bg-surface: #0D140F;     /* Dark surface */
+  --col-primary: #02d438;    /* Matrix Green */
+  --col-secondary: #E5E7EB;  /* Light grey for readability */
+  --col-accent: #9D00FF;     /* Electric Purple accent */
+  --col-muted: #4F6A55;      /* Matrix muted text */
+  --col-shadow: #004D00;     /* Deep green shadow */
 }
 
 @theme {
