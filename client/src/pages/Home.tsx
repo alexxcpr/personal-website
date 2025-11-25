@@ -4,9 +4,13 @@ import { About } from '../components/sections/About';
 import { TechStack } from '../components/sections/TechStack';
 import { Experience } from '../components/sections/Experience';
 import { Projects } from '../components/sections/Projects';
+import { Pricing } from '../components/sections/Pricing';
 import { Contact } from '../components/sections/Contact';
+import { useLanguage } from '../context/LanguageContext';
 
 const Home: React.FC = () => {
+  const { t } = useLanguage();
+
   return (
     <main className="w-full">
       <Hero />
@@ -14,10 +18,11 @@ const Home: React.FC = () => {
       <TechStack />
       <Experience />
       <Projects />
+      <Pricing />
       <Contact />
       
       <footer className="bg-surface text-secondary border-t-3 border-secondary py-6 text-center font-mono">
-        <p>©{new Date().getFullYear()} Stănciulescu Alex Ciprian. All rights reserved.</p>
+        <p>©{new Date().getFullYear()} Stănciulescu Alex Ciprian. {t.footer.copyright}</p>
       </footer>
     </main>
   );

@@ -4,8 +4,10 @@ import { Input, Textarea } from '../ui/Input';
 import { Button } from '../ui/Button';
 import axios from 'axios';
 import { Github, Linkedin, Mail } from 'lucide-react';
+import { useLanguage } from '../../context/LanguageContext';
 
 export const Contact: React.FC = () => {
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -21,7 +23,6 @@ export const Contact: React.FC = () => {
     e.preventDefault();
     setStatus('sending');
     try {
-      // Assuming backend runs on port 5000 or proxied
       await axios.post('http://localhost:5000/api/contact', formData);
       setStatus('success');
       setFormData({ name: '', email: '', message: '' });
@@ -34,12 +35,12 @@ export const Contact: React.FC = () => {
   return (
     <section id="contact" className="py-12 px-4 md:py-20 md:px-8 bg-surface text-secondary border-t-3 border-secondary relative overflow-hidden">
       <div className="max-w-4xl mx-auto relative z-10">
-        <h2 className="text-3xl md:text-4xl font-bold mb-8 md:mb-12 text-primary border-b-4 border-primary inline-block pb-2">Get In Touch</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-8 md:mb-12 text-primary border-b-4 border-primary inline-block pb-2">{t.contact.title}</h2>
         
         <div className="grid md:grid-cols-2 gap-8 md:gap-12">
           <div>
             <p className="text-lg md:text-xl mb-8 text-secondary">
-              Interested in working together? Fill out the form or connect with me on social media.
+              {t.contact.desc}
             </p>
             <div className="space-y-4">
                <a 
@@ -64,7 +65,7 @@ export const Contact: React.FC = () => {
             </div>
             <div className="mt-8 md:mt-12">
                <Button variant="outline" className="text-secondary border-secondary hover:bg-secondary hover:text-primary w-full md:w-auto">
-                 Download CV
+                 {t.contact.downloadCv}
                </Button>
             </div>
           </div>
@@ -72,14 +73,14 @@ export const Contact: React.FC = () => {
           <Card>
              <form onSubmit={handleSubmit} className="space-y-4">
                 <Input 
-                  label="Name" 
+                  label={t.contact.form.name}
                   name="name" 
                   value={formData.name} 
                   onChange={handleChange} 
                   required 
                 />
                 <Input 
-                  label="Email" 
+                  label={t.contact.form.email}
                   name="email" 
                   type="email" 
                   value={formData.email} 
@@ -87,7 +88,7 @@ export const Contact: React.FC = () => {
                   required 
                 />
                 <Textarea 
-                  label="Message" 
+                  label={t.contact.form.message}
                   name="message" 
                   value={formData.message} 
                   onChange={handleChange} 
@@ -99,10 +100,10 @@ export const Contact: React.FC = () => {
                   className="w-full"
                   disabled={status === 'sending'}
                 >
-                  {status === 'sending' ? 'Sending...' : 'Send Message'}
+                  {status === 'sending' ? t.contact.form.sending : t.contact.form.send}
                 </Button>
-                {status === 'success' && <p className="text-green-600 font-bold mt-2">Message sent successfully!</p>}
-                {status === 'error' && <p className="text-red-600 font-bold mt-2">Failed to send message.</p>}
+                {status === 'success' && <p className="text-green-600 font-bold mt-2">{t.contact.form.success}</p>}
+                {status === 'error' && <p className="text-red-600 font-bold mt-2">{t.contact.form.error}</p>}
              </form>
           </Card>
         </div>
@@ -110,4 +111,3 @@ export const Contact: React.FC = () => {
     </section>
   );
 };
-

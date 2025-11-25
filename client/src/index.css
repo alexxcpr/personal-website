@@ -71,6 +71,12 @@
   background: var(--col-accent); 
 }
 
+/* Custom Text Selection */
+::selection {
+  background-color: var(--col-primary);
+  color: #121212;
+}
+
 /* Matrix Glitch Effect Styles */
 .glitch-wrapper {
   position: relative;
@@ -108,7 +114,7 @@
 /* Green Matrix Shift */
 .glitch-layer:nth-child(2) {
   clip-path: inset(0 0 0 0);
-  animation: glitch-anim-matrix-1 3s infinite linear alternate-reverse;
+  animation: glitch-anim-matrix-1 4s infinite linear alternate-reverse;
   filter: sepia(100%) saturate(500%) hue-rotate(80deg) opacity(0.8);
   mix-blend-mode: hard-light;
 }
@@ -116,7 +122,7 @@
 /* Bright Digital Shift */
 .glitch-layer:nth-child(3) {
   clip-path: inset(0 0 0 0);
-  animation: glitch-anim-matrix-2 2.5s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94) alternate-reverse;
+  animation: glitch-anim-matrix-2 3.5s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94) alternate-reverse;
   filter: brightness(200%) opacity(0.5);
   mix-blend-mode: overlay;
 }

@@ -1,8 +1,11 @@
 import React from 'react';
 import { Card } from '../ui/Card';
 import profile from '../../assets/profile.jpeg';
+import { useLanguage } from '../../context/LanguageContext';
 
 export const About: React.FC = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="about" className="py-20 px-8 bg-surface border-y-3 border-secondary">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
@@ -18,14 +21,13 @@ export const About: React.FC = () => {
             </div>
         </div>
         <div>
-          <h2 className="text-4xl font-bold mb-6 border-l-8 border-primary pl-4">About Me</h2>
+          <h2 className="text-4xl font-bold mb-6 border-l-8 border-primary pl-4">{t.about.title}</h2>
           <Card className="bg-main">
             <p className="text-lg mb-4">
-              I am a passionate developer with a knack for building robust and scalable web applications. 
-              My journey started with a simple "Hello World" and has evolved into complex full-stack architectures.
+              {t.about.p1}
             </p>
             <p className="text-lg">
-              When I'm not coding, I'm exploring new design trends like Neobrutalism and experimenting with interactive 3D elements.
+              {t.about.p2}
             </p>
           </Card>
         </div>
@@ -33,4 +35,3 @@ export const About: React.FC = () => {
     </section>
   );
 };
-

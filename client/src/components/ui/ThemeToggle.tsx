@@ -10,7 +10,7 @@ export const ThemeToggle: React.FC = () => {
     <motion.button
       onClick={toggleTheme}
       className={`
-        fixed bottom-6 right-6 z-50
+       
         w-14 h-14
         rounded-full
         bg-surface
