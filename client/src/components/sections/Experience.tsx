@@ -8,7 +8,7 @@ export const Experience: React.FC = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="py-20 px-8 bg-surface border-y-3 border-secondary">
+    <section className="py-20 px-8 bg-main">
       <div className="max-w-4xl mx-auto">
         <motion.h2 
           initial={{ opacity: 0, x: -50 }}

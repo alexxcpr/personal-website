@@ -15,8 +15,8 @@ const Home: React.FC = () => {
     <main className="w-full">
       <Hero />
       <About />
-      <TechStack />
       <Experience />
+      <TechStack />
       <Projects />
       <Pricing />
       <Contact />

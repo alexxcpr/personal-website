@@ -14,7 +14,7 @@ export const TechStack: React.FC = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="py-20 px-8 bg-main">
+    <section className="py-20 px-8 bg-surface border-y-3 border-secondary">
       <div className="max-w-4xl mx-auto text-center">
         <motion.h2 
           variants={fadeInUp}
