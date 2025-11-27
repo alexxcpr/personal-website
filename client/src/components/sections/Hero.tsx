@@ -24,7 +24,7 @@ export const Hero: React.FC = () => {
         </motion.h1>
         
         <motion.p variants={fadeInUp} className="text-lg md:text-2xl text-secondary mb-8 max-w-2xl mx-auto font-medium px-2">
-          {t.hero.role} <span className="bg-primary text-secondary px-2 inline-block">{t.hero.description}</span>
+          {t.hero.role} <span className="text-primary font-bold border-b-4 border-primary/50 mx-2">{t.hero.description}</span>
         </motion.p>
         
         <motion.div variants={fadeInUp} className="flex flex-col md:flex-row gap-4 justify-center">
