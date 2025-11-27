@@ -155,7 +155,7 @@ export const translations = {
       title: "Despre Mine",
       p1: "Sunt un dezvoltator web pasionat de lucrurile făcute consistent. Filosofia mea este simplă: un website sau o aplicație trebuie să funcționeze perfect, fără să genereze stres ulterior pentru proprietar. Mă caracterizează curiozitatea tehnică nativă și responsabilitatea totală față de proiectele pe care le preiau.",
       p2: "Nu scriu doar cod, ci construiesc soluții. Fie că ai nevoie de un site de prezentare elegant sau de o platformă complexă, pun accent pe o comunicare clară  și pe livrarea unui produs final solid. Clienții mei apreciază faptul că, odată finalizat un proiect, acesta \"doar merge\", permițându-le să se concentreze pe afacerea lor, nu pe mentenanță.",
-      p3: "Lucrez activ de 2 ani în cadrul unei companii de software, iar acum îmi încep în paralel activitatea mea de freelancer."
+      p3: "Lucrez activ de 2 ani în cadrul unei companii de software, iar acum îmi încep în paralel activitatea de freelancer."
     },
     techStack: {
       title: "Tehnologii"
