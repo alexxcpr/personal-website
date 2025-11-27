@@ -9,9 +9,9 @@ interface ButtonProps extends HTMLMotionProps<"button"> {
 }
 
 const variants = {
-  primary: 'bg-primary text-secondary border-secondary hover:bg-accent hover:text-white',
+  primary: 'bg-primary text-text-on-primary border-border-on-primary hover:bg-accent hover:text-white hover:border-secondary',
   secondary: 'bg-secondary text-white border-secondary hover:bg-gray-800',
-  outline: 'bg-transparent text-secondary border-secondary hover:bg-primary',
+  outline: 'bg-transparent text-secondary border-secondary hover:bg-primary hover:text-text-on-primary hover:border-border-on-primary',
 };
 
 export const Button: React.FC<ButtonProps> = ({ 
@@ -40,4 +40,3 @@ export const Button: React.FC<ButtonProps> = ({
     </motion.button>
   );
 };
-

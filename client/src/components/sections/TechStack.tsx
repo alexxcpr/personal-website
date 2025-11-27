@@ -36,7 +36,7 @@ export const TechStack: React.FC = () => {
           >
             {skills.map((skill) => (
               <motion.div key={skill} variants={itemScale}>
-                <Badge className="text-lg py-2 px-4 hover:bg-primary hover:text-secondary cursor-default transition-colors">
+                <Badge className="text-lg py-2 px-4 hover:bg-primary hover:text-text-on-primary hover:border-border-on-primary cursor-default transition-colors">
                   {skill}
                 </Badge>
               </motion.div>

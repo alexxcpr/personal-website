@@ -61,7 +61,7 @@ export const Pricing: React.FC = () => {
                       animate={{ scale: 1 }}
                       transition={{ type: "spring", delay: 0.5 }}
                     >
-                        <Badge className="bg-primary text-secondary font-bold px-3 py-1">{t.pricing.bestValue}</Badge>
+                        <Badge className="bg-primary text-text-on-primary border-border-on-primary font-bold px-3 py-1">{t.pricing.bestValue}</Badge>
                     </motion.div>
                 )}
                 

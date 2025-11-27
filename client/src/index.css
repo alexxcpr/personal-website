@@ -10,6 +10,8 @@
   --col-accent: #8A2BE2;
   --col-muted: #A3A3A3;
   --col-shadow: #121212;
+  --col-text-on-primary: #121212; /* Always dark text on primary bg */
+  --col-border-on-primary: #121212; /* Always dark border on primary bg */
 }
 
 [data-theme="dark"] {
@@ -21,6 +23,8 @@
   --col-accent: #9D00FF;     /* Electric Purple accent */
   --col-muted: #4F6A55;      /* Matrix muted text */
   --col-shadow: #004D00;     /* Deep green shadow */
+  --col-text-on-primary: #121212; /* Explicitly keep it dark in dark mode */
+  --col-border-on-primary: #121212; /* Explicitly keep it dark in dark mode */
 }
 
 @theme {
@@ -30,6 +34,8 @@
   --color-secondary: var(--col-secondary);
   --color-accent: var(--col-accent);
   --color-muted: var(--col-muted);
+  --color-text-on-primary: var(--col-text-on-primary);
+  --color-border-on-primary: var(--col-border-on-primary);
 
   --shadow-neo: 4px 4px 0px 0px var(--col-shadow);
   --shadow-neo-hover: 6px 6px 0px 0px var(--col-shadow);

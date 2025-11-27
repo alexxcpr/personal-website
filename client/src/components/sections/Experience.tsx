@@ -35,7 +35,7 @@ export const Experience: React.FC = () => {
               <div className="md:w-1/4">
                  <motion.div 
                    variants={itemScale}
-                   className="font-mono font-bold bg-primary text-secondary border-2 border-secondary p-2 inline-block shadow-neo transform rotate-2"
+                   className="font-mono font-bold bg-primary text-text-on-primary border-2 border-border-on-primary p-2 inline-block shadow-neo transform rotate-2"
                  >
                     {exp.period}
                  </motion.div>
