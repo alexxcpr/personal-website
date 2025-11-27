@@ -5,6 +5,8 @@ import { Button } from '../ui/Button';
 import axios from 'axios';
 import { Github, Linkedin, Mail } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
+import { motion } from 'framer-motion';
+import { fadeInLeft, fadeInRight, viewportConfig, transition } from '../../animations/variants';
 
 export const Contact: React.FC = () => {
   const { t } = useLanguage();
@@ -35,10 +37,22 @@ export const Contact: React.FC = () => {
   return (
     <section id="contact" className="py-12 px-4 md:py-20 md:px-8 bg-surface text-secondary border-t-3 border-secondary relative overflow-hidden">
       <div className="max-w-4xl mx-auto relative z-10">
-        <h2 className="text-3xl md:text-4xl font-bold mb-8 md:mb-12 text-primary border-b-4 border-primary inline-block pb-2">{t.contact.title}</h2>
+        <motion.h2 
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={viewportConfig}
+          className="text-3xl md:text-4xl font-bold mb-8 md:mb-12 text-primary border-b-4 border-primary inline-block pb-2"
+        >
+          {t.contact.title}
+        </motion.h2>
         
         <div className="grid md:grid-cols-2 gap-8 md:gap-12">
-          <div>
+          <motion.div
+            variants={fadeInLeft}
+            initial="hidden"
+            whileInView="visible"
+            viewport={viewportConfig}
+          >
             <p className="text-lg md:text-xl mb-8 text-secondary">
               {t.contact.desc}
             </p>
@@ -68,44 +82,74 @@ export const Contact: React.FC = () => {
                  {t.contact.downloadCv}
                </Button>
             </div>
-          </div>
+          </motion.div>
 
-          <Card>
-             <form onSubmit={handleSubmit} className="space-y-4">
-                <Input 
-                  label={t.contact.form.name}
-                  name="name" 
-                  value={formData.name} 
-                  onChange={handleChange} 
-                  required 
-                />
-                <Input 
-                  label={t.contact.form.email}
-                  name="email" 
-                  type="email" 
-                  value={formData.email} 
-                  onChange={handleChange} 
-                  required 
-                />
-                <Textarea 
-                  label={t.contact.form.message}
-                  name="message" 
-                  value={formData.message} 
-                  onChange={handleChange} 
-                  required 
-                />
-                <Button 
-                  type="submit" 
-                  variant="primary" 
-                  className="w-full"
-                  disabled={status === 'sending'}
-                >
-                  {status === 'sending' ? t.contact.form.sending : t.contact.form.send}
-                </Button>
-                {status === 'success' && <p className="text-green-600 font-bold mt-2">{t.contact.form.success}</p>}
-                {status === 'error' && <p className="text-red-600 font-bold mt-2">{t.contact.form.error}</p>}
-             </form>
-          </Card>
+          <motion.div
+            variants={fadeInRight}
+            initial="hidden"
+            whileInView="visible"
+            viewport={viewportConfig}
+          >
+            <Card>
+               <form onSubmit={handleSubmit} className="space-y-4">
+                  <Input 
+                    label={t.contact.form.name}
+                    name="name" 
+                    value={formData.name} 
+                    onChange={handleChange} 
+                    required 
+                  />
+                  <Input 
+                    label={t.contact.form.email}
+                    name="email" 
+                    type="email" 
+                    value={formData.email} 
+                    onChange={handleChange} 
+                    required 
+                  />
+                  <Textarea 
+                    label={t.contact.form.message}
+                    name="message" 
+                    value={formData.message} 
+                    onChange={handleChange} 
+                    required 
+                  />
+                  <Button 
+                    type="submit" 
+                    variant="primary" 
+                    className="w-full"
+                    disabled={status === 'sending'}
+                  >
+                    <motion.span
+                      key={status}
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={transition}
+                    >
+                      {status === 'sending' ? t.contact.form.sending : t.contact.form.send}
+                    </motion.span>
+                  </Button>
+                  {status === 'success' && (
+                    <motion.p 
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: 'auto' }}
+                      className="text-green-600 font-bold mt-2"
+                    >
+                      {t.contact.form.success}
+                    </motion.p>
+                  )}
+                  {status === 'error' && (
+                    <motion.p 
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: 'auto' }}
+                      className="text-red-600 font-bold mt-2"
+                    >
+                      {t.contact.form.error}
+                    </motion.p>
+                  )}
+               </form>
+            </Card>
+          </motion.div>
         </div>
       </div>
     </section>

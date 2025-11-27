@@ -3,32 +3,33 @@ export const translations = {
     hero: {
       greeting: "Hello, World! I am",
       role: "Full Stack Developer",
-      description: "building neobrutalist web experiences.",
+      description: "building modern web experiences.",
       ctaWork: "View Work",
       ctaContact: "Contact Me"
     },
     about: {
       title: "About Me",
-      p1: "I am a passionate developer with a knack for building robust and scalable web applications. My journey started with a simple \"Hello World\" and has evolved into complex full-stack architectures.",
-      p2: "When I'm not coding, I'm exploring new design trends like Neobrutalism and experimenting with interactive 3D elements."
+      p1: "I am a web developer passionate about doing things consistently. My philosophy is simple: a website or an application must work flawlessly, without causing stress later on for its owner. I’m defined by natural technical curiosity and complete responsibility for every project I take on.",
+      p2: "I don't just write code, I build solutions. Whether you need an elegant presentation site or a complex platform, I focus on clear communication and delivering a solid final product. My clients appreciate that once a project is finished, it \"just works\", allowing them to focus on their business, not maintenance.",
+      p3: "I work actively for 2 years in a software company, and now I start my freelance activity."
     },
     techStack: {
       title: "Tech Stack"
     },
     experience: {
-      title: "Experience",
+      title: "Professional Experience",
       items: [
         {
-          role: "Senior Full Stack Developer",
-          company: "Tech Corp",
-          period: "2023 - Present",
-          description: "Leading the frontend team and re-architecting the legacy monolith into microservices."
+          role: "Programmer",
+          company: "One Software",
+          period: "2024 - Present",
+          description: "I managed a wide range of systems used in large projects (such as state institutions), solved old problems that no one addressed, consistently improved the experience of my clients, and delivered stable solutions that \"just work\", without headaches or subsequent maintenance for those who work with me."
         },
         {
-          role: "Frontend Developer",
-          company: "Web Solutions",
-          period: "2021 - 2023",
-          description: "Built responsive web applications using React and reduced load times by 40%."
+          role: "Assistant Programmer",
+          company: "One Software",
+          period: "2023 - 2024",
+          description: "I contributed to the development and improvement of internal and business applications, creating stable and easy-to-maintain features, optimizing how data and processes are managed, and actively participating in technical decisions within the team."
         }
       ]
     },
@@ -37,36 +38,42 @@ export const translations = {
       demo: "Demo",
       code: "Code",
       items: [
-        {
-          title: "E-Commerce Platform",
-          description: "A full-featured online store with cart, checkout, and admin dashboard.",
-          stack: ["React", "Node.js", "MongoDB"],
-          demo: "#",
-          github: "#"
-        },
-        {
-          title: "Task Management App",
-          description: "Collaborative task manager with real-time updates using WebSockets.",
-          stack: ["Next.js", "Socket.io", "PostgreSQL"],
-          demo: "#",
-          github: "#"
-        },
+        // {
+        //   title: "E-Commerce Platform",
+        //   description: "A full-featured online store with cart, checkout, and admin dashboard.",
+        //   stack: ["React", "Node.js", "MongoDB"],
+        //   demo: "#",
+        //   github: "#"
+        // },
+        // {
+        //   title: "Task Management App",
+        //   description: "Collaborative task manager with real-time updates using WebSockets.",
+        //   stack: ["Next.js", "Socket.io", "PostgreSQL"],
+        //   demo: "#",
+        //   github: "#"
+        // },
         {
           title: "Portfolio Website",
-          description: "Neobrutalist portfolio website with matrix rain effect.",
-          stack: ["React", "Tailwind", "Framer Motion"],
-          demo: "#",
+          description: "Modern portfolio website with matrix rain effect, neobrutalist style.",
+          stack: ["React", "TypeScript", "Tailwind", "Framer Motion"],
+          demo: "https://stanciulescu.xyz",
           github: "#"
         }
       ]
     },
     pricing: {
       title: "Offers & Services",
-      subtitle: "Transparent. No hidden costs. Neobrutalist.",
-      packages: {
-        static: {
+      subtitle: "Transparent. No hidden costs. Modern.",
+      button: "Choose Package",
+      bestValue: "BEST VALUE",
+      items: [
+        {
           title: "Static SPA",
           desc: "Perfect for portfolio or simple presentation.",
+          price: "350€",
+          suffix: "(Start)",
+          icon: "terminal",
+          highlight: false,
           features: [
             "5 sections included (Hero, Main, About, Contact, Footer)",
             "+20€ / extra section",
@@ -74,9 +81,13 @@ export const translations = {
             "Complex changes: Negotiable"
           ]
         },
-        dynamic: {
+        {
           title: "Dynamic SPA (CMS)",
           desc: "You control content (text, images) without code.",
+          price: "700€",
+          suffix: "(Start)",
+          icon: "zap",
+          highlight: true,
           features: [
             "Simple admin panel",
             "5 sections included",
@@ -84,20 +95,27 @@ export const translations = {
             "Technical interventions: Negotiable"
           ]
         },
-        multi: {
+        {
           title: "Multi-Page Website",
           desc: "Complex site with multiple pages and routes.",
+          price: "200€",
+          suffix: "/ page",
+          icon: "layers",
+          highlight: false,
           features: [
             "Scalable architecture",
             "Fee per feature (negotiable)",
             "SEO optimized per page",
             "Complex navigation"
-          ],
-          suffix: "/ page"
+          ]
         },
-        custom: {
+        {
           title: "Full Custom / App",
           desc: "Complex solutions: E-Commerce, SaaS, Dashboards.",
+          price: "CUSTOM",
+          suffix: "",
+          icon: "code",
+          highlight: false,
           features: [
             "Unique Design & Architecture",
             "Custom Database & API",
@@ -105,10 +123,7 @@ export const translations = {
             "Scalability & Performance"
           ]
         }
-      },
-      button: "Choose Package",
-      bestValue: "BEST VALUE",
-      start: "(Start)"
+      ]
     },
     contact: {
       title: "Get In Touch",
@@ -126,39 +141,39 @@ export const translations = {
     },
     footer: {
       copyright: "All rights reserved.",
-      built: "Built with Neobrutalism."
     }
   },
   ro: {
     hero: {
-      greeting: "Salut, Lume! Sunt",
+      greeting: "Salut! Sunt",
       role: "Full Stack Developer",
-      description: "construind experiențe web neobrutaliste.",
+      description: "construind experiențe web moderne.",
       ctaWork: "Vezi Proiecte",
       ctaContact: "Contactează-mă"
     },
     about: {
       title: "Despre Mine",
-      p1: "Sunt un dezvoltator pasionat, specializat în construirea de aplicații web robuste și scalabile. Călătoria mea a început cu un simplu \"Hello World\" și a evoluat în arhitecturi full-stack complexe.",
-      p2: "Când nu scriu cod, explorez noi trenduri de design precum Neobrutalismul și experimentez cu elemente 3D interactive."
+      p1: "Sunt un dezvoltator web pasionat de lucrurile făcute consistent. Filosofia mea este simplă: un website sau o aplicație trebuie să funcționeze perfect, fără să genereze stres ulterior pentru proprietar. Mă caracterizează curiozitatea tehnică nativă și responsabilitatea totală față de proiectele pe care le preiau.",
+      p2: "Nu scriu doar cod, ci construiesc soluții. Fie că ai nevoie de un site de prezentare elegant sau de o platformă complexă, pun accent pe o comunicare clară  și pe livrarea unui produs final solid. Clienții mei apreciază faptul că, odată finalizat un proiect, acesta \"doar merge\", permițându-le să se concentreze pe afacerea lor, nu pe mentenanță.",
+      p3: "Lucrez activ de 2 ani în cadrul unei companii de software, iar acum îmi încep în paralel activitatea mea de freelancer."
     },
     techStack: {
       title: "Tehnologii"
     },
     experience: {
-      title: "Experiență",
+      title: "Experiență profesională",
       items: [
         {
-          role: "Senior Full Stack Developer",
-          company: "Tech Corp",
-          period: "2023 - Prezent",
-          description: "Coordonez echipa de frontend și re-arhitecturez monolitul legacy în microservicii."
+          role: "Programator",
+          company: "One Software",
+          period: "2024 - Prezent",
+          description: "Am gestionat cap-coadă sisteme folosite în proiecte mari (precum instituții ale statului), am rezolvat probleme vechi pe care nimeni nu le aborda, am îmbunătățit constant experiența clienților și am livrat soluții stabile care „doar funcționează”, fără bătăi de cap sau mentenanță ulterioară pentru cei care lucrează cu mine."
         },
         {
-          role: "Frontend Developer",
-          company: "Web Solutions",
-          period: "2021 - 2023",
-          description: "Am construit aplicații web responsive folosind React și am redus timpii de încărcare cu 40%."
+          role: "Ajutor de programator",
+          company: "One Software",
+          period: "2023 - 2024",
+          description: "Am contribuit la dezvoltarea și îmbunătățirea unor aplicații interne și de business, creând funcționalități stabile și ușor de întreținut, optimizând modul în care sunt gestionate datele și procesele, și participând activ la deciziile tehnice ale echipei."
         }
       ]
     },
@@ -167,36 +182,42 @@ export const translations = {
       demo: "Demo",
       code: "Cod",
       items: [
-        {
-          title: "Platformă E-Commerce",
-          description: "Magazin online complet cu coș, checkout și panou de administrare.",
-          stack: ["React", "Node.js", "MongoDB"],
-          demo: "#",
-          github: "#"
-        },
-        {
-          title: "Aplicație Task Management",
-          description: "Manager de task-uri colaborativ cu actualizări în timp real prin WebSockets.",
-          stack: ["Next.js", "Socket.io", "PostgreSQL"],
-          demo: "#",
-          github: "#"
-        },
+        // {
+        //   title: "Platformă E-Commerce",
+        //   description: "Magazin online complet cu coș, checkout și panou de administrare.",
+        //   stack: ["React", "Node.js", "MongoDB"],
+        //   demo: "#",
+        //   github: "#"
+        // },
+        // {
+        //   title: "Aplicație Task Management",
+        //   description: "Manager de task-uri colaborativ cu actualizări în timp real prin WebSockets.",
+        //   stack: ["Next.js", "Socket.io", "PostgreSQL"],
+        //   demo: "#",
+        //   github: "#"
+        // },
         {
           title: "Website Portofoliu",
-          description: "Website portofoliu neobrutalist cu efect de ploaie matrix.",
-          stack: ["React", "Tailwind", "Framer Motion"],
-          demo: "#",
+          description: "Website portofoliu modern cu efect de ploaie matrix, stil neobrutalist.",
+          stack: ["React", "TypeScript", "Tailwind", "Framer Motion"],
+          demo: "https://stanciulescu.xyz",
           github: "#"
         }
       ]
     },
     pricing: {
       title: "Oferte & Servicii",
-      subtitle: "Transparent. Fără costuri ascunse. Neobrutalist.",
-      packages: {
-        static: {
+      subtitle: "Transparent. Fără costuri ascunse. Modern.",
+      button: "Alege Pachetul",
+      bestValue: "BEST VALUE",
+      items: [
+        {
           title: "Static SPA",
           desc: "Perfect pentru portofoliu sau prezentare simplă.",
+          price: "350€",
+          suffix: "(Start)",
+          icon: "terminal",
+          highlight: false,
           features: [
             "5 secțiuni incluse (Hero, Main, About, Contact, Footer)",
             "+20€ / secțiune extra",
@@ -204,9 +225,13 @@ export const translations = {
             "Modificări complexe: Negociabil"
           ]
         },
-        dynamic: {
+        {
           title: "Dynamic SPA (CMS)",
           desc: "Tu controlezi conținutul (texte, poze) fără cod.",
+          price: "700€",
+          suffix: "(Start)",
+          icon: "zap",
+          highlight: true,
           features: [
             "Panou de administrare simplu",
             "5 secțiuni incluse",
@@ -214,20 +239,27 @@ export const translations = {
             "Intervenții tehnice: Negociabil"
           ]
         },
-        multi: {
+        {
           title: "Multi-Page Website",
           desc: "Site complex cu multiple pagini și rute.",
+          price: "200€",
+          suffix: "/ pagină",
+          icon: "layers",
+          highlight: false,
           features: [
             "Arhitectură scalabilă",
             "Taxă per funcționalitate (negociabil)",
             "SEO optimizat per pagină",
             "Navigare complexă"
-          ],
-          suffix: "/ pagină"
+          ]
         },
-        custom: {
+        {
           title: "Full Custom / App",
           desc: "Soluții complexe: E-Commerce, SaaS, Dashboards.",
+          price: "CUSTOM",
+          suffix: "",
+          icon: "code",
+          highlight: false,
           features: [
             "Design & Arhitectură unică",
             "Bază de date & API custom",
@@ -235,10 +267,7 @@ export const translations = {
             "Scalabilitate & Performanță"
           ]
         }
-      },
-      button: "Alege Pachetul",
-      bestValue: "BEST VALUE",
-      start: "(Start)"
+      ]
     },
     contact: {
       title: "Contactează-mă",
@@ -256,7 +285,6 @@ export const translations = {
     },
     footer: {
       copyright: "Toate drepturile rezervate.",
-      built: "Construit cu Neobrutalism."
     }
   }
 };
