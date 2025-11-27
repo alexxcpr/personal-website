@@ -24,8 +24,8 @@ export const About: React.FC = () => {
                 <img src={profile} alt="Profile" className="w-full h-full object-cover relative z-10" />
                 
                 {/* Glitch Layers for Loop Effect */}
-                <img src={profile} aria-hidden="true" className="glitch-layer absolute inset-0 w-full h-full object-cover z-20" />
-                <img src={profile} aria-hidden="true" className="glitch-layer absolute inset-0 w-full h-full object-cover z-20" />
+                <img src={profile} alt="Profile" aria-hidden="true" className="glitch-layer absolute inset-0 w-full h-full object-cover z-20" />
+                <img src={profile} alt="Profile" aria-hidden="true" className="glitch-layer absolute inset-0 w-full h-full object-cover z-20" />
             </div>
         </motion.div>
         
