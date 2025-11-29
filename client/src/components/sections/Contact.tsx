@@ -78,7 +78,7 @@ export const Contact: React.FC = () => {
                </a>
             </div>
             <div className="mt-8 md:mt-12">
-               <Button variant="outline" className="text-secondary border-secondary hover:bg-secondary hover:text-primary w-full md:w-auto">
+               <Button variant="outline" className="text-secondary border-secondary hover:bg-primary hover:text-primary w-full md:w-auto">
                  {t.contact.downloadCv}
                </Button>
             </div>

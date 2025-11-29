@@ -63,36 +63,44 @@ export const translations = {
     },
     pricing: {
       title: "Offers & Services",
-      subtitle: "Transparent. No hidden costs. Modern.",
+      subtitle: "Transparent. No hidden costs. Modern. All offers include hosting first year, domain, technical support.",
       button: "Choose Package",
       bestValue: "BEST VALUE",
       items: [
         {
-          title: "Static SPA",
-          desc: "Perfect for portfolio or simple presentation.",
-          price: "350€",
+          title: "Simple Presentation Website",
+          desc: "Ideal for elegant, professional site showcasing business, services, portfolio.",
+          price: "390€",
           suffix: "(Start)",
           icon: "terminal",
           highlight: false,
           features: [
-            "5 sections included (Hero, Main, About, Contact, Footer)",
-            "+20€ / extra section",
-            "+20€ / content intervention",
-            "Complex changes: Negotiable"
+            "Modern design, available on any device (works perfectly on phone)",
+            "6 sections included (example: Home, About, Services, Portfolio/Gallery, Testimonials, Contact)",
+            "Functional contact form (receive leads directly on email + optional WhatsApp, with instant notifications)",
+            "Performance and fast loading (under 2 seconds)",
+            "SEO optimized (optimized titles, meta descriptions, alt text on images, etc.)",
+            "Essential security & SSL free",
+            "First 30 days of maintenance free"
           ]
         },
         {
-          title: "Dynamic SPA (CMS)",
+          title: "Presentation Website with Admin Panel",
           desc: "You control content (text, images) without code.",
-          price: "700€",
+          price: "750€",
           suffix: "(Start)",
           icon: "zap",
           highlight: true,
           features: [
-            "Simple admin panel",
-            "5 sections included",
-            "+30€ / extra section",
-            "Technical interventions: Negotiable"
+            "Everything in the \"Simple\" package",
+            "Simple admin panel (enter with user/password)",
+            "Easy to edit: text, images, add/delete articles/blog, change order of sections/pages, update prices/offers",
+            "Up to 8 pages/sections included",
+            "Free Google Analytics integration",
+            "Advanced integration: Interactive Google Maps, calendars (ex: appointments, reservations, etc.)",
+            "Customized video tutorial (5-10 minutes, step by step) + PDF guide - you learn in 1 hour",
+            "Automatic monthly backup",
+            "Free technical interventions for the first 30 days"
           ]
         },
         {
@@ -207,36 +215,44 @@ export const translations = {
     },
     pricing: {
       title: "Oferte & Servicii",
-      subtitle: "Transparent. Fără costuri ascunse. Modern.",
+      subtitle: "Transparent. Fără costuri ascunse. Modern. Toate ofertele includ găzduire primul an, domeniu, suport tehnic.",
       button: "Alege Pachetul",
       bestValue: "BEST VALUE",
       items: [
         {
-          title: "Static SPA",
-          desc: "Perfect pentru portofoliu sau prezentare simplă.",
-          price: "350€",
+          title: "Site de Prezentare Simplu",
+          desc: "Ideal pentru site elegant, profesional de prezentare afacere, servicii, portofoliu.",
+          price: "390€",
           suffix: "(Start)",
           icon: "terminal",
           highlight: false,
           features: [
-            "5 secțiuni incluse (Hero, Main, About, Contact, Footer)",
-            "+20€ / secțiune extra",
-            "+20€ / intervenție conținut",
-            "Modificări complexe: Negociabil"
+            "Design modern, disponibil pe orice dispozitiv (merge perfect pe telefon)",
+            "6 secțiuni incluse (exemplu: Acasă, Despre, Servicii, Portofoliu/Galerie, Testimoniale, Contact)",
+            "Formular de contact inteligent (primești lead-urile direct pe e-mail + opțional WhatsApp, cu notificări instant)",
+            "Performanță și încărcare rapidă (sub 2 secunde)",
+            "SEO optimizat (titluri optimizate, meta descrieri, alt text la imagini, etc.)",
+            "Securitate esențială & SSL gratis",
+            "Primele 30 de zile de mentenanță gratuită ",
           ]
         },
         {
-          title: "Dynamic SPA (CMS)",
+          title: "Site de Prezentare cu Panou de Administrare",
           desc: "Tu controlezi conținutul (texte, poze) fără cod.",
-          price: "700€",
+          price: "750€",
           suffix: "(Start)",
           icon: "zap",
           highlight: true,
           features: [
-            "Panou de administrare simplu",
-            "5 secțiuni incluse",
-            "+30€ / secțiune extra",
-            "Intervenții tehnice: Negociabil"
+            "Tot ce e în pachetul \"Simplu\"",
+            "Panou de administrare simplu (intri cu user/parolă)",
+            "Editezi ușor: texte, imagini, adăugare/ștergere articole/blog, schimbare ordine secțiuni/pagini, actualizări prețuri/oferte",
+            "Până la 8 pagini/secțiuni incluse",
+            "Integrare gratuită Google Analytics",
+            "Integrare avansată: Google Maps interactiv, calendare (ex: programări, rezervări, etc.)",
+            "Video tutorial personalizat (5-10 minute, pas cu pas) + ghid PDF - te înveți în 1 oră",
+            "Backup automat lunar",
+            "Intervenții tehnice gratis primele 30 de zile"
           ]
         },
         {
